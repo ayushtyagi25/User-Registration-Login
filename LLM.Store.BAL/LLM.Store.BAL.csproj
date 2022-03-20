@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MailKit" Version="3.0.0" />
+    <PackageReference Include="MimeKit" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LLM.Store.ApplicationCore\LLM.Store.ApplicationCore.csproj" />
+    <ProjectReference Include="..\LLM.Store.DAL\LLM.Store.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

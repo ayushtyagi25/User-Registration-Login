@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head> 
+      
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 40px;
+            }
+
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+
+                /* Right-aligned link */
+                .navbar a.right {
+                    float: right;
+                }
+
+                /* Change color on hover */
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                /* Active/current link */
+                .navbar a.active {
+                    background-color: #666;
+                    color: white;
+                }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+
+<body>
+
+    <div class="header">
+        <img width="200" height="39" src="https://www.limitlessmobil.com/wp-content/uploads/2017/12/Final-Logo.png" class="logo dark" alt="" loading="eager">
+        <h1>Welcome To DotNet Training At LLM</h1>
+        <p>A <b>Training</b> By DHEERAJ SIR.
+    </div>
+    <div class="navbar">
+        <a href="#" class="active">Welcome</a>
+        <a href="#">To</a>
+        <a href="#">First</a>
+        <a href="#" class="right">Mailing API</a>
+        
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About MySelf</h2>
+            <h5>My Profile:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Hello Team, Hope you all are doing Great.</p>
+            <h3>Basic Info</h3>
+            <p>Trainee at Limitless Mobility Solution</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>LLM Info </h2>
+            <img alt="Image" draggable="true" src="https://pbs.twimg.com/media/E9C8apzVEA8Z4bT?format=jpg&amp;name=small" class="css-9pa8cd">
+            <br>
+            <img width="200" height="39" src="https://www.limitlessmobil.com/wp-content/uploads/2017/12/Final-Logo.png" class="logo dark" alt="" loading="lazy">
+            <h5>Title description, Dec 20th, 2021</h5>
+            <img src="https://www.limitlessmobil.com/wp-content/uploads/2017/12/title-3.png" alt="" data-ww="750px" data-hh="389px" width="750" height="389" data-no-retina="" style="text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 6px; width: 480.242px; height: 249.085px; transition: none 0s ease 0s;">
+
+            <p>LLM Details.. </p>
+            <p>Limitless Mobility is a community of entrepreneurs, developers, thought leaders and professionals using cutting-edge technologies to create enterprise mobility solutions & IT consulting services of tomorrow. Our aim is to be a catalyst for innovation by leveraging state-of-the-art technology, leadership and partnerships to improve the way businesses are done across the world, and in the process, make people’s lives easier.</p>
+            <br>
+            <h2>About</h2>
+            <h5>About us, Dec 20th, 2021</h5>
+            <img alt="" draggable="true" src="https://pbs.twimg.com/profile_banners/871685262698582016/1556174940/600x200" class="css-9pa8cd">
+            <p>Information</p>
+            <p>Limitless Mobility is a hub of revolutionary thinking where solutions of tomorrow are brought to life. Headquartered in Noida, India. We are a community of entrepreneurs, developers, thought leaders and professionals pushing the boundaries of technological disruption each and every day.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>
+            Thanks & Regards
+            Limitless Family
+            <br>
+            Limitless Mobility Solutions Pvt. Ltd.
+            Signature Tower, 1st Floor, Plot No. 3,
+            Knowledge Park- III, Gr Noida- 201308, U.P, India
+            Mobile: +91-9560860712 | Email: ayush@limitlessmobil.com
+            <br>
+            Website: www.limitlessmobil.com
+            <br>
+            <img width="200" height="39" src="https://www.limitlessmobil.com/wp-content/uploads/2017/12/Final-Logo.png" class="logo dark" alt="" loading="lazy">
+            <br>
+            <a href="https://www.facebook.com/limitlessmobility/" target="_blank"><i class="font-icon-19 fa fa-facebook-f"></i></a>
+            <i class="font-icon-19 fa fa-facebook-f"></i>
+            <a href="https://twitter.com/LimitlessMobilS" target="_blank"><i class="font-icon-19 fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/limitless-mobility" target="_blank"><i class="font-icon-19 fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/limitlessmobility/" target="_blank"><i class="font-icon-19 fa fa-instagram"></i></a>
+            <br>
+            Page Created By "Created By AYUSH"
+        </h2>
+    </div>
+</body>
+</html>
